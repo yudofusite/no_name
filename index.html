@@ -27,10 +27,16 @@ a:hover {
     .title {
       text-align: center;
       font-weight: bold;
-      color: #000030;
+      font-size: 30px;
+      color: #ffffff00;
+      transition: 0.3s;
     }
   </style>
 </head>
 <body>
-<p class="title">湯豆腐サイトへようこそ</p>
+<p class="title" id="title">湯豆腐サイトへようこそ</p>
+  <script>
+    let title = document.getElementById("title");
+    title.color = "#000030";
+  </script>
 </body>
