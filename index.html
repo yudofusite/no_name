@@ -28,8 +28,8 @@ a:hover {
     .rogo {
       margin: 0 auto;
       width: 60%;
-      position: relative;
-      
+      position: fixed;
+      opacity: 0;
     }
     .title {
       text-align: center;
@@ -61,5 +61,10 @@ a:hover {
     title.style.fontSize = "40px";
     title.style.letterSpacing = "15px";
     },1500);
+
+    let icon = document.getElementById("rogo");
+    setTimeout(function (){
+      icon.style.opacity = 1;
+    },100);
   </script>
 </body>
