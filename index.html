@@ -31,7 +31,14 @@ a:hover {
       position: fixed;
       opacity: 0;
       display: block;
+      text-align : center;
       transition: 0.3s;
+    }
+    .rogobg {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: #99d9ea;
     }
     .title {
       text-align: center;
@@ -49,6 +56,7 @@ a:hover {
   </style>
 </head>
 <body>
+<div class="rogobg" id="rogobg"></div>
 <img src="yudofuicon.png" class="rogo" id="rogo">
 <p class="title" id="title">湯豆腐サイトへようこそ</p>
   <script>
@@ -69,7 +77,11 @@ a:hover {
       icon.style.opacity = 1;
     },100);
     setTimeout(function (){
-      icon.style.opacity =0;
+      icon.style.opacity = 0;
     },1000);
+   let rogobg = document.getElementById("rogobg");
+   setTimeout(function () {
+      rogobg.style.opacity = 0;
+    },1200);
   </script>
 </body>
