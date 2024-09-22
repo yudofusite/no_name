@@ -65,7 +65,7 @@ a:hover {
 <img src="yudofuicon.png" class="rogo" id="rogo">
 <p class="title" id="title">湯豆腐サイトへようこそ</p>
 <p class="gaiyo" id="gaiyo">fc2ホームページで公開してましたが<br>GitHubの試用も兼ねてこちらにもページを作りました。</p>
-  <a href="https://yudofusite.web.fc2.com"><u>こっち</u></a>も見てってね
+  <p class="gaiyo"><a href="https://yudofusite.web.fc2.com"><u>こっち</u></a>も見てってね</p>
   <script>
     let title = document.getElementById("title");
     setTimeout(function() {
@@ -86,6 +86,8 @@ a:hover {
    let gaiyo = document.getElementById("gaiyo");
    setTimeout(function () {
       rogobg.style.opacity = 0;
+      rogobg.style.display = "none";
+      rogo.style.display = "none";
       gaiyo.style.opacity = 1;
     },1200);
 
